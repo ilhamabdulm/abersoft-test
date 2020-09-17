@@ -31,7 +31,7 @@ expo start
 
 ### Screenshot
 
-![Image1](https://github.com/ilhamabdulm/abersoft-test/tree/master/screenshot/ss-1-welcome.jpeg)
-![Image2](https://github.com/ilhamabdulm/abersoft-test/tree/master/screenshot/ss-2-register.jpeg)
-![Image3](https://github.com/ilhamabdulm/abersoft-test/tree/master/screenshot/ss-3-login.jpeg)
-![Image4](https://github.com/ilhamabdulm/abersoft-test/tree/master/screenshot/ss-4-main.jpeg)
+![Image1](https://github.com/ilhamabdulm/abersoft-test/blob/master/screenshot/ss-1-welcome.jpeg)
+![Image2](https://github.com/ilhamabdulm/abersoft-test/blob/master/screenshot/ss-2-register.jpeg)
+![Image3](https://github.com/ilhamabdulm/abersoft-test/blob/master/screenshot/ss-3-login.jpeg)
+![Image4](https://github.com/ilhamabdulm/abersoft-test/blob/master/screenshot/ss-4-main.jpeg)
