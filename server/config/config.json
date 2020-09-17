@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "administrator",
+    "password": "kodokterbang21",
+    "database": "abersoft",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
