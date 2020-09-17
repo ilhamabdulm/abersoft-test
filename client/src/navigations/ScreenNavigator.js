@@ -13,48 +13,42 @@ function ScreenNavigator() {
   const headerOptions = {
     headerShown: false,
   };
-  const [isLogin, setLogin] = useState(false);
+  const [initialRoute, setInitialRoute] = useState('Welcome');
 
   useEffect(() => {
     const token = getToken();
     if (token) {
-      setLogin(true);
+      setInitialRoute('Main');
     } else {
-      setLogin(false);
+      setInitialRoute('Welcome');
     }
-  }, [isLogin]);
+  }, [initialRoute]);
 
   const renderCondition = () => {
-    if (!isLogin)
-      return (
-        <Stack.Navigator initialRouteName="Welcome">
-          <Stack.Screen
-            name="Welcome"
-            component={WelcomeScreen}
-            options={{ ...headerOptions }}
-          />
-          <Stack.Screen
-            name="Login"
-            component={LoginScreen}
-            options={{ ...headerOptions }}
-          />
-          <Stack.Screen
-            name="Register"
-            component={RegisterScreen}
-            options={{ ...headerOptions }}
-          />
-        </Stack.Navigator>
-      );
-    else
-      return (
-        <Stack.Navigator initialRouteName="Main">
-          <Stack.Screen
-            name="Main"
-            component={MainScreen}
-            options={{ ...headerOptions }}
-          />
-        </Stack.Navigator>
-      );
+    return (
+      <Stack.Navigator initialRouteName={initialRoute}>
+        <Stack.Screen
+          name="Welcome"
+          component={WelcomeScreen}
+          options={{ ...headerOptions }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ ...headerOptions }}
+        />
+        <Stack.Screen
+          name="Register"
+          component={RegisterScreen}
+          options={{ ...headerOptions }}
+        />
+        <Stack.Screen
+          name="Main"
+          component={MainScreen}
+          options={{ ...headerOptions }}
+        />
+      </Stack.Navigator>
+    );
   };
 
   return renderCondition();
